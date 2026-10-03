@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANBAN JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2? family=Google   +Sans+Flex:opsz,wght@6..144,1..1000& display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9907795d05.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="left">
+          <a href="/dashboard.html"><h3>kanban js</h3></a>
+        </div>
+        <div class="right">
+          <button id="toggle-modal">Add new task</button>
+        </div>
+      </nav>
+      <section class="kanban-board">
+        <div id="todo" class="task-col">
+          <div class="heading">
+            <div class="left">todo</div>
+            <div class="right">0</div>
+          </div>
+        </div>
+        <div id="pending" class="task-col">
+          <div class="heading">
+            <div class="left">in progress</div>
+            <div class="right">0</div>
+          </div>
+          <!-- <div class="task" draggable="true">
+                    <h2>Task 2</h2>
+                    <p>Description will be shown here.</p>
+                   <a href=""> <i class="fa-solid fa-trash-can"></i></a>
+                </div> -->
+        </div>
+        <div id="completed" class="task-col">
+          <div class="heading">
+            <div class="left">completed</div>
+            <div class="right">0</div>
+          </div>
+        </div>
+      </section>
+      <div class="modal add-new-task">
+        <div class="bg"></div>
+        <div class="center">
+          <input type="text" placeholder="Task Title" 
+            id="task-input"/>
+          <textarea placeholder="Task Description" 
+            id="task-desc"></textarea>
+          <button class="add-task-btn" id="add-new-task">Add Task <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
